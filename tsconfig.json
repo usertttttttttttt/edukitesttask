@@ -1,0 +1,17 @@
+{
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "hooks": ["src/hooks/index"],
+      "modules/*": ["src/modules/*"],
+      "ui": ["src/ui/index"],
+    },
+    "target": "esnext",
+    "module": "commonjs",
+    "jsx": "react-native",
+    "strict": true
+  },
+  "include": ["src", "App.tsx"],
+  "extensions": [".tsx", ".ts", ".js"]
+}
